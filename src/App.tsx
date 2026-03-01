@@ -233,7 +233,7 @@ function ContactSection() {
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-gray-900">E-Mail</p>
-                  <p className="text-gray-600">zaun-terras@gmail.com</p>
+                  <p className="text-gray-600">info@zauneterras.de</p>
                 </div>
               </div>
 
@@ -378,7 +378,7 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-2 text-gray-400">
-              <p>zaun-terras@gmail.com</p>
+              <p>info@zauneterras.de</p>
               <p>+49 (0) 123 456 789</p>
             </div>
           </div>

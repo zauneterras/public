@@ -14,8 +14,8 @@ export const sendEmailAction = action({
   },
   handler: async (_, args) => {
     await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "zaun-terras@gmail.com",
+      from: "info@zauneterras.de",
+      to: "zaune.terras@gmail.com",
       subject: `رسالة جديدة: ${args.subject}`,
       text: `من: ${args.name} (${args.email})\n\nالرسالة: ${args.message}`,
     });
