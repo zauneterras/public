@@ -1,5 +1,6 @@
 import { mutation, query, internalQuery } from "./_generated/server";
 import { v } from "convex/values";
+import { api } from "./_generated/api"; // تأكد أن هذا السطر مكتوب بشكل صحيح
 
 export const submitContactForm = mutation({
   args: {
@@ -19,18 +20,17 @@ export const submitContactForm = mutation({
       submittedAt: Date.now(),
     });
 
-    // Log the submission for now (in production, you would send an email)
-    console.log("New contact form submission:", {
-      id: submissionId,
+    // تأكد أن هذا الجزء يتبع الـ insert مباشرة وبداخل الـ handler
+    await ctx.scheduler.runAfter(0, api.actions.sendEmailAction, {
       name: args.name,
       email: args.email,
       subject: args.subject,
+      message: args.message,
     });
 
     return submissionId;
   },
-});
-
+}); 
 export const getContactSubmissions = query({
   args: {},
   handler: async (ctx) => {
@@ -49,4 +49,4 @@ export const getSubmissionById = internalQuery({
   handler: async (ctx, args) => {
     return await ctx.db.get(args.id);
   },
-});
+});  
