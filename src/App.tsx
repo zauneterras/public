@@ -89,39 +89,39 @@ function ImageGallery() {
   const galleryImages = [
     {
       id: 1,
-      src: "/images/terrassendaecher.jpg",
+      src: "/images/3235gfdggfd.png",
       title: "Moderne Terrassenüberdachung",
-      description: "Elegante Glasüberdachung mit Aluminium-Konstruktion",
+      description: "Elegante Glasüberdachung mit Aluminium-Konstruktion für ganzjährigen Schutz",
     },
     {
       id: 2,
-      src: "/images/sichtschutz.jpg",
+      src: "/images/3fds.png",
       title: "Exklusiver Sichtschutz",
-      description: "Hochwertige Zaunsysteme für maximale Privatsphäre",
+      description: "Hochwertige Zaunsysteme für maximale Privatsphäre und Ästhetik",
     },
     {
       id: 3,
       src: "/images/kaltwintergaerten.jpg",
       title: "Kaltwintergarten",
-      description: "Stilvolle Erweiterung des Wohnraums",
+      description: "Stilvolle Erweiterung des Wohnraums mit optimaler Lichtdurchlässigkeit",
     },
     {
       id: 4,
       src: "/images/gartenzaun.jpg",
       title: "Designer Gartenzaun",
-      description: "Moderne Zaunlösungen in Premium-Qualität",
+      description: "Moderne Zaunlösungen in Premium-Qualität mit edlen Materialien",
     },
     {
       id: 5,
-      src: "/images/pergola.jpg",
+      src: "/images/ok23.png",
       title: "Pergola-System",
-      description: "Flexible Beschattungslösungen für jeden Bedarf",
+      description: "Flexible Beschattungslösungen für jeden Bedarf mit integrierter Steuerung",
     },
     {
       id: 6,
-      src: "/images/outdoor-komplett.png",
+      src: "/images/sworr.png",
       title: "Komplettlösung Outdoor",
-      description: "Harmonische Gestaltung des gesamten Außenbereichs",
+      description: "Harmonische Gestaltung des gesamten Außenbereichs aus einer Hand",
     },
   ];
 
