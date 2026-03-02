@@ -247,7 +247,7 @@ function ContactSection() {
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-gray-900">Telefon</p>
-                  <p className="text-gray-600">+49 (0) 123 456 789</p>
+                  <p className="text-gray-600">+49 1521 0450701</p>
                 </div>
               </div>
             </div>
@@ -300,7 +300,7 @@ function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder="+49 (0) 123 456 789"
+                  placeholder="+49 1521 0450701"
                 />
               </div>
 
@@ -379,7 +379,7 @@ function Footer() {
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-2 text-gray-400">
               <p>info@zauneterras.de</p>
-              <p>+49 (0) 123 456 789</p>
+              <p>+49 1521 0450701</p>
             </div>
           </div>
         </div>
