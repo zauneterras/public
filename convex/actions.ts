@@ -10,17 +10,18 @@ export const sendEmailAction = action({
     message: v.string(),
   },
   handler: async (ctx, args) => {
-    // تأكد من وجود المفتاح
+    // هذا يقرأ المفتاح من Convex Dashboard ✅
     const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) {
       throw new Error("RESEND_API_KEY is not configured");
     }
     
+    // هذا يستخدم المفتاح الذي قرأته ✅
     const resend = new Resend(apiKey);
     
     await resend.emails.send({
       from: "info@zauneterras.de",
-      to: "kaddourtrade@gmail.com", // ✅ هذا هو الإيميل الذي تريده
+      to: "kaddourtrade@gmail.com",
       subject: `رسالة جديدة: ${args.subject}`,
       html: `
         <div dir="rtl">
