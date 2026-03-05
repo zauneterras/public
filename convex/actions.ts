@@ -2,8 +2,6 @@ import { action } from "./_generated/server";
 import { v } from "convex/values";
 import { Resend } from "resend";
 
-// لا تحتاج "use node" - هذا ليس صحيحاً في Convex
-
 export const sendEmailAction = action({
   args: {
     name: v.string(),
@@ -22,7 +20,7 @@ export const sendEmailAction = action({
     
     await resend.emails.send({
       from: "info@zauneterras.de",
-      to: "kaddourtrade@gmail.com", // هنا الإيميل الذي يستقبل الرسائل
+      to: "kaddourtrade@gmail.com", // ✅ هذا هو الإيميل الذي تريده
       subject: `رسالة جديدة: ${args.subject}`,
       html: `
         <div dir="rtl">
@@ -34,7 +32,6 @@ export const sendEmailAction = action({
           <p>${args.message}</p>
         </div>
       `,
-      // يمكنك أيضاً إضافة نص عادي كاحتياطي
       text: `من: ${args.name} (${args.email})\nالموضوع: ${args.subject}\n\nالرسالة: ${args.message}`,
     });
   },
