@@ -17,7 +17,7 @@ export const sendContactEmail = action({
 
     // In a real implementation, you would use a service like Resend or SendGrid
     // For now, we'll just log the email content
-    console.log("Email would be sent to: zaun-terras@gmail.com");
+    console.log("Email would be sent to: kaddourtrade@gmail.com");
     console.log("Subject: Neue Kontaktanfrage von", submission.name);
     console.log("Content:", {
       name: submission.name,
